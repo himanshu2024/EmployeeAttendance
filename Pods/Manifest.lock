@@ -1,0 +1,30 @@
+PODS:
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+  - sqlite3 (3.30.1):
+    - sqlite3/common (= 3.30.1)
+  - sqlite3/common (3.30.1)
+  - ZumeroSync (3.2.0.4154):
+    - ZumeroSync/SQLite (= 3.2.0.4154)
+  - ZumeroSync/SQLite (3.2.0.4154):
+    - sqlite3
+
+DEPENDENCIES:
+  - SQLite.swift (~> 0.12.0)
+  - ZumeroSync
+
+SPEC REPOS:
+  trunk:
+    - SQLite.swift
+    - sqlite3
+    - ZumeroSync
+
+SPEC CHECKSUMS:
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+  sqlite3: d47c022c998fdba385ca61fad2b29161533a7fd5
+  ZumeroSync: 10aaf853f23510ed8cf0a702761c0d1a2131ba39
+
+PODFILE CHECKSUM: 8946672df712854b1084824e4c92e84eb6a75145
+
+COCOAPODS: 1.8.4

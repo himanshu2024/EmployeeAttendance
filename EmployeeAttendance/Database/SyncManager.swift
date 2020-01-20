@@ -12,7 +12,7 @@ import UIKit
 class SyncManager : SyncProtocol{
     var syncProgressUpdateDelegate: SyncProgressProtocol?
     
-    let dbPath = (UIApplication.shared.delegate as! AppDelegate).getDBFilePath()
+    let dbPath : String = (UIApplication.shared.delegate as! AppDelegate).getDBFilePath()
     var syncStage : Int?
     var cancelToken : Int32?
     

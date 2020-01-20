@@ -13,55 +13,33 @@ class FirstSyncViewController: UIViewController {
     
     @IBOutlet weak var syncMessageLabel: UILabel!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
-    var vm : FirstSyncViewModel?
-    
-    //var array = [Employee]()
+    //var vm : FirstSyncViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        let syncManager = SyncManager()
-        syncManager.syncProgressUpdateDelegate = self
-        vm = FirstSyncViewModel(syncManager: syncManager)
-
-        var dm = DatabaseManager()
-        //dm.getDevices()
-        
-        var x = DeviceEntity.shared.queryAll()
-        
-//        vm?.startSync { [unowned self]
-//            (isSuccess, message) in
-//            DispatchQueue.main.async {
-//            self.loadingIndicator.isHidden = true
-//            }
-//        }
+        self.checkForSync(syncParam : nil)
     }
     
-    
-//    /Library/Developer/CoreSimulator/Devices/2671AF09-0F29-4F08-B5B3-40FAEA95FAE1/data/Containers/Data/Application/79031FFD-1580-49F2-B06E-6CC82F521B9D/Documents/
 }
 
-extension FirstSyncViewController : SyncProgressProtocol{
-    func syncProgressStatus(message: String) {
+extension FirstSyncViewController : FirstSync{
+    func progressUpdate(message: String) {
         DispatchQueue.main.async {
             self.syncMessageLabel.text = message
         }
-        
     }
     
-    func syncCompleted() {
+    func onNextPage() {
         DispatchQueue.main.async {
-        self.syncMessageLabel.text = "Sync completed successfully"
+            self.syncMessageLabel.text = "GO to Home"
         }
     }
     
-    func syncFailed() {
+    func onError(dueTo: SyncFailed) {
         DispatchQueue.main.async {
-        self.syncMessageLabel.text = "Error"
+            self.syncMessageLabel.text = "Error"
         }
     }
-    
-    
 }
 

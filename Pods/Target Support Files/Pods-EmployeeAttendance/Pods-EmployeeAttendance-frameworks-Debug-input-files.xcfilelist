@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-EmployeeAttendance/Pods-EmployeeAttendance-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SQLite.swift/SQLite.framework
+${BUILT_PRODUCTS_DIR}/ZumeroSync/ZumeroSync.framework
+${BUILT_PRODUCTS_DIR}/sqlite3/sqlite3.framework

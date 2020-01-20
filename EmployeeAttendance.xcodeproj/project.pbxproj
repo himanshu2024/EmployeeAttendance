@@ -3,27 +3,52 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8610A47923D02F8E00BDF0DF /* SyncProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610A47823D02F8E00BDF0DF /* SyncProtocol.swift */; };
+		8610A47F23D04B8D00BDF0DF /* Devices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8610A47E23D04B8D00BDF0DF /* Devices.swift */; };
+		86BF8FF323D1DB1900916DF9 /* DeviceInfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF8FF223D1DB1900916DF9 /* DeviceInfoHelper.swift */; };
+		86BF8FF623D1FF2D00916DF9 /* FirstSyncHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF8FF523D1FF2D00916DF9 /* FirstSyncHelper.swift */; };
+		86BF8FF823D33EFA00916DF9 /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF8FF723D33EFA00916DF9 /* Locations.swift */; };
+		86BF8FFC23D34D1B00916DF9 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86BF8FFB23D34D1B00916DF9 /* DatabaseManager.swift */; };
 		86C75C9423C5B51B004B9791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C75C9323C5B51B004B9791 /* AppDelegate.swift */; };
 		86C75C9623C5B51B004B9791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C75C9523C5B51B004B9791 /* SceneDelegate.swift */; };
-		86C75C9823C5B51B004B9791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C75C9723C5B51B004B9791 /* ViewController.swift */; };
+		86C75C9823C5B51B004B9791 /* FirstSyncViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C75C9723C5B51B004B9791 /* FirstSyncViewController.swift */; };
 		86C75C9B23C5B51B004B9791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C75C9923C5B51B004B9791 /* Main.storyboard */; };
 		86C75C9D23C5B524004B9791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86C75C9C23C5B524004B9791 /* Assets.xcassets */; };
 		86C75CA023C5B524004B9791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C75C9E23C5B524004B9791 /* LaunchScreen.storyboard */; };
+		86F73C6D23CDD995006F7F78 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F73C6C23CDD995006F7F78 /* SyncManager.swift */; };
+		86F73C7023CDDC3F006F7F78 /* SyncParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F73C6F23CDDC3F006F7F78 /* SyncParam.swift */; };
+		86F73C7423CDF998006F7F78 /* SQLiteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F73C7323CDF998006F7F78 /* SQLiteError.swift */; };
+		86F73C7623CDF9E0006F7F78 /* SQLiteDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F73C7523CDF9E0006F7F78 /* SQLiteDatabase.swift */; };
+		D687C5E81107F0178FC27A4D /* Pods_EmployeeAttendance.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C410024C7D9B8998A0ECDB4E /* Pods_EmployeeAttendance.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4276EA3E316E3C415A735072 /* Pods-EmployeeAttendance.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmployeeAttendance.release.xcconfig"; path = "Target Support Files/Pods-EmployeeAttendance/Pods-EmployeeAttendance.release.xcconfig"; sourceTree = "<group>"; };
+		82351B002C51826EB11B34CA /* Pods-EmployeeAttendance.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EmployeeAttendance.debug.xcconfig"; path = "Target Support Files/Pods-EmployeeAttendance/Pods-EmployeeAttendance.debug.xcconfig"; sourceTree = "<group>"; };
+		8610A47823D02F8E00BDF0DF /* SyncProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncProtocol.swift; sourceTree = "<group>"; };
+		8610A47E23D04B8D00BDF0DF /* Devices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Devices.swift; sourceTree = "<group>"; };
+		86BF8FF223D1DB1900916DF9 /* DeviceInfoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoHelper.swift; sourceTree = "<group>"; };
+		86BF8FF423D1E06200916DF9 /* EmployeeAttendance-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EmployeeAttendance-Bridging-Header.h"; sourceTree = "<group>"; };
+		86BF8FF523D1FF2D00916DF9 /* FirstSyncHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSyncHelper.swift; sourceTree = "<group>"; };
+		86BF8FF723D33EFA00916DF9 /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+		86BF8FFB23D34D1B00916DF9 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		86C75C9023C5B51B004B9791 /* EmployeeAttendance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmployeeAttendance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C75C9323C5B51B004B9791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		86C75C9523C5B51B004B9791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		86C75C9723C5B51B004B9791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86C75C9723C5B51B004B9791 /* FirstSyncViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstSyncViewController.swift; sourceTree = "<group>"; };
 		86C75C9A23C5B51B004B9791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		86C75C9C23C5B524004B9791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		86C75C9F23C5B524004B9791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		86C75CA123C5B524004B9791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F73C6C23CDD995006F7F78 /* SyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
+		86F73C6F23CDDC3F006F7F78 /* SyncParam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncParam.swift; sourceTree = "<group>"; };
+		86F73C7323CDF998006F7F78 /* SQLiteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteError.swift; sourceTree = "<group>"; };
+		86F73C7523CDF9E0006F7F78 /* SQLiteDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteDatabase.swift; sourceTree = "<group>"; };
+		C410024C7D9B8998A0ECDB4E /* Pods_EmployeeAttendance.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EmployeeAttendance.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +56,71 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D687C5E81107F0178FC27A4D /* Pods_EmployeeAttendance.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65C9AD6CC06FC8D61992597F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				82351B002C51826EB11B34CA /* Pods-EmployeeAttendance.debug.xcconfig */,
+				4276EA3E316E3C415A735072 /* Pods-EmployeeAttendance.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7EEE35E3A26A5BC9405888F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C410024C7D9B8998A0ECDB4E /* Pods_EmployeeAttendance.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8610A47A23D0339000BDF0DF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8610A47D23D04B7100BDF0DF /* Tables */ = {
+			isa = PBXGroup;
+			children = (
+				8610A47E23D04B8D00BDF0DF /* Devices.swift */,
+				86BF8FF723D33EFA00916DF9 /* Locations.swift */,
+			);
+			path = Tables;
+			sourceTree = "<group>";
+		};
+		86BF8FF023D1DAA200916DF9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				86C75C9723C5B51B004B9791 /* FirstSyncViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		86BF8FF123D1DAF400916DF9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				86BF8FF223D1DB1900916DF9 /* DeviceInfoHelper.swift */,
+				86BF8FF523D1FF2D00916DF9 /* FirstSyncHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		86C75C8723C5B51B004B9791 = {
 			isa = PBXGroup;
 			children = (
+				86BF8FF423D1E06200916DF9 /* EmployeeAttendance-Bridging-Header.h */,
 				86C75C9223C5B51B004B9791 /* EmployeeAttendance */,
 				86C75C9123C5B51B004B9791 /* Products */,
+				65C9AD6CC06FC8D61992597F /* Pods */,
+				7EEE35E3A26A5BC9405888F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +135,40 @@
 		86C75C9223C5B51B004B9791 /* EmployeeAttendance */ = {
 			isa = PBXGroup;
 			children = (
-				86C75C9323C5B51B004B9791 /* AppDelegate.swift */,
-				86C75C9523C5B51B004B9791 /* SceneDelegate.swift */,
-				86C75C9723C5B51B004B9791 /* ViewController.swift */,
+				86BF8FF123D1DAF400916DF9 /* Helper */,
+				86BF8FF023D1DAA200916DF9 /* Controllers */,
+				8610A47A23D0339000BDF0DF /* ViewModels */,
+				86F73C6E23CDDBC8006F7F78 /* Models */,
+				86F73C6B23CDD965006F7F78 /* Database */,
 				86C75C9923C5B51B004B9791 /* Main.storyboard */,
 				86C75C9C23C5B524004B9791 /* Assets.xcassets */,
 				86C75C9E23C5B524004B9791 /* LaunchScreen.storyboard */,
+				86C75C9323C5B51B004B9791 /* AppDelegate.swift */,
+				86C75C9523C5B51B004B9791 /* SceneDelegate.swift */,
 				86C75CA123C5B524004B9791 /* Info.plist */,
 			);
 			path = EmployeeAttendance;
+			sourceTree = "<group>";
+		};
+		86F73C6B23CDD965006F7F78 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8610A47D23D04B7100BDF0DF /* Tables */,
+				86F73C6C23CDD995006F7F78 /* SyncManager.swift */,
+				86F73C6F23CDDC3F006F7F78 /* SyncParam.swift */,
+				86F73C7323CDF998006F7F78 /* SQLiteError.swift */,
+				86F73C7523CDF9E0006F7F78 /* SQLiteDatabase.swift */,
+				8610A47823D02F8E00BDF0DF /* SyncProtocol.swift */,
+				86BF8FFB23D34D1B00916DF9 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		86F73C6E23CDDBC8006F7F78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86C75CA423C5B524004B9791 /* Build configuration list for PBXNativeTarget "EmployeeAttendance" */;
 			buildPhases = (
+				C6E8794370BF1A6984CDA885 /* [CP] Check Pods Manifest.lock */,
 				86C75C8C23C5B51B004B9791 /* Sources */,
 				86C75C8D23C5B51B004B9791 /* Frameworks */,
 				86C75C8E23C5B51B004B9791 /* Resources */,
+				4964BBB72F354AC10BB20189 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +239,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4964BBB72F354AC10BB20189 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmployeeAttendance/Pods-EmployeeAttendance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EmployeeAttendance/Pods-EmployeeAttendance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EmployeeAttendance/Pods-EmployeeAttendance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6E8794370BF1A6984CDA885 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EmployeeAttendance-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		86C75C8C23C5B51B004B9791 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86C75C9823C5B51B004B9791 /* ViewController.swift in Sources */,
+				86F73C7023CDDC3F006F7F78 /* SyncParam.swift in Sources */,
+				86BF8FF323D1DB1900916DF9 /* DeviceInfoHelper.swift in Sources */,
+				86BF8FFC23D34D1B00916DF9 /* DatabaseManager.swift in Sources */,
+				8610A47923D02F8E00BDF0DF /* SyncProtocol.swift in Sources */,
+				86F73C6D23CDD995006F7F78 /* SyncManager.swift in Sources */,
+				86BF8FF823D33EFA00916DF9 /* Locations.swift in Sources */,
+				8610A47F23D04B8D00BDF0DF /* Devices.swift in Sources */,
+				86BF8FF623D1FF2D00916DF9 /* FirstSyncHelper.swift in Sources */,
+				86F73C7423CDF998006F7F78 /* SQLiteError.swift in Sources */,
+				86C75C9823C5B51B004B9791 /* FirstSyncViewController.swift in Sources */,
 				86C75C9423C5B51B004B9791 /* AppDelegate.swift in Sources */,
+				86F73C7623CDF9E0006F7F78 /* SQLiteDatabase.swift in Sources */,
 				86C75C9623C5B51B004B9791 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +440,7 @@
 		};
 		86C75CA523C5B524004B9791 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 82351B002C51826EB11B34CA /* Pods-EmployeeAttendance.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,6 +452,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hpc.EmployeeAttendance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmployeeAttendance-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +460,7 @@
 		};
 		86C75CA623C5B524004B9791 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4276EA3E316E3C415A735072 /* Pods-EmployeeAttendance.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -311,6 +472,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hpc.EmployeeAttendance;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "EmployeeAttendance-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

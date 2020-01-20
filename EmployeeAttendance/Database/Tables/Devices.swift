@@ -11,44 +11,59 @@ import SQLite
 
 class DeviceEntity {
     static let shared = DeviceEntity()
+
+    private let dbConnection = SQLiteDatabase.shared.connection
+
+    private(set) var tblDevices = Table("tblDevices")
     
-    private let tblDevices = Table("tblDevices")
-    
-    private let id = Expression<Int>("device_id")
-    private let clientId = Expression<Int>("client_id")
-    private let deviceUniqueId = Expression<String>("device_unique_id")
-    private let isActive = Expression<Bool>("is_active")
-    private let locationId = Expression<Int>("location_id")
-    private let zoneId = Expression<Int?>("zone_id")
-    private let mobileNumber = Expression<String?>("mobile_number")
-    private let pin = Expression<String?>("pin")
-    private let os = Expression<String?>("os")
-    private let configSettings = Expression<String?>("config_settings")
-    private let softwareVersion = Expression<String?>("software_version")
-    private let syncFreq = Expression<Int?>("sync_freq")
-    private let deviceModelId = Expression<Int?>("device_model_id")
-    
-    //How to query(find) all records in tblDepartment ?
-    func queryAll() -> Array<Devices> {
+    private(set) var deviceId = Expression<Int>("device_id")
+    private(set) var clientId = Expression<Int>("client_id")
+    private(set) var deviceUniqueId = Expression<String>("device_unique_id")
+    private(set) var isActive = Expression<Bool>("is_active")
+    private(set) var locationId = Expression<Int>("location_id")
+    private(set) var zoneId = Expression<Int?>("zone_id")
+    private(set) var mobileNumber = Expression<String?>("mobile_number")
+    private(set) var pin = Expression<String?>("pin")
+    private(set) var os = Expression<String?>("os")
+    private(set) var configSettings = Expression<String?>("config_settings")
+    private(set) var softwareVersion = Expression<String?>("software_version")
+    private(set) var syncFreq = Expression<Int?>("sync_freq")
+    private(set) var deviceModelId = Expression<Int?>("device_model_id")
+}
+
+extension DeviceEntity{
+    func allDevices() -> Array<Devices> {
         var array  = Array<Devices>()
         do {
-            if let rows = try SQLiteDatabase.shared.connection?.prepare(self.tblDevices){
+            if let rows = try dbConnection?.prepare(self.tblDevices){
                 for row in rows{
                     array.append(getDevice(from: row))
                 }
             }
         } catch {
             let nserror = error as NSError
-            print("Cannot query(list) all tblDepartment. Error is: \(nserror), \(nserror.userInfo)")
+            print("Cannot query(list) all tblDevices. Error is: \(nserror), \(nserror.userInfo)")
             
         }
         return array
     }
     
-    func getDevice(from row : Row) -> Devices {
-        return Devices(deviceId: row[self.id], clientId: row[self.clientId], deviceUniqueId: row[self.deviceUniqueId], isActive: row[self.isActive], locationId: row[self.locationId], zoneId: row[self.zoneId], mobileNumber: row[self.mobileNumber], pin: row[self.pin], os: row[self.os], configSettings: row[self.configSettings], softwareVersion: row[self.softwareVersion], syncFreq: row[self.syncFreq], deviceModelId: row[self.deviceModelId])
+    func firstDevice() -> Devices? {
+        var device : Devices?
+        do {
+            if let row = try dbConnection?.pluck(self.tblDevices){
+                device = getDevice(from: row)
+            }
+        } catch {
+            let nserror = error as NSError
+            print("Cannot query(list) all tblDevices. Error is: \(nserror), \(nserror.userInfo)")
+        }
+        return device
     }
-    
+
+    func getDevice(from row : Row) -> Devices {
+        return Devices(deviceId: row[deviceId], clientId: row[clientId], deviceUniqueId: row[deviceUniqueId], isActive: row[isActive], locationId: row[locationId], zoneId: row[zoneId], mobileNumber: row[mobileNumber], pin: row[pin], os: row[os], configSettings: row[configSettings], softwareVersion: row[softwareVersion], syncFreq: row[syncFreq], deviceModelId: row[deviceModelId])
+    }
 }
 
 struct Devices {
